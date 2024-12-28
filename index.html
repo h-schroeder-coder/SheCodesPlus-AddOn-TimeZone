@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="src/CSS/index.css" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
-    <title>Time Zone Tool</title>
+    <title>World Clock Tool</title>
   </head>
   <body>
     <div class="timezone-tool-container">
         <header>
-            <h1>Time Zone Tool</h1>
+            <h1>World Clock Tool</h1>
         </header>
         <main>
-            <form action="/submit">
+            <form action="/submit" class="form-city-select">
                 <select name="city" id="city" class="city-select">
                     <option value="">Select a city</option>
                     <option value="Europe/Paris">Paris, France</option>
@@ -24,13 +24,53 @@
             </form>
             <div  class="results">
                 <div class="results-header">
-                    Results
+                    Your Results
                 </div>
                     <div class="result-details" id="result-details">
                         <div id="results-current-details">
                             Your results will display here after you select a city
                         </div>
                     </div>
+            </div>
+            <div class="popularLocations">
+                <h2>Popular Locations</h2>
+                <div class="popularCities">
+                    <div id="los-angeles">
+                        Los Angeles <img src="src\Media\united-states-of-america-flag-waving-icon-64.png" alt="" class="usa-waving-flag-emoji">
+                        <div class="localDate" id="localDateLA">Date</div>
+                        <div class="localTime" id="localTimeLA">00:00:00</div>
+                    </div>
+                    <div id="chicago">
+                        Chicago <img src="src\Media\united-states-of-america-flag-waving-icon-64.png" alt="" class="usa-waving-flag-emoji">
+                        <div class="localDate" id="localDateCh">Date</div>
+                        <div class="localTime" id="localTimeCh">00:00:00</div>
+                    </div>
+                    <div id="new-york">
+                        New York <img src="src\Media\united-states-of-america-flag-waving-icon-64.png" alt="" class="usa-waving-flag-emoji">
+                        <div class="localDate" id="localDateNY">Date</div>
+                        <div class="localTime" id="localTimeNY">00:00:00</div>
+                    </div>
+                    <div id="barcelona">
+                        Barcelona <img src="src\Media\spain-flag-waving-icon-64.png" alt="" class="spain-waving-flag-emoji">
+                        <div class="localDate" id="localDateBa">Date</div>
+                        <div class="localTime" id="localTimeBa">00:00:00</div>
+                    </div>
+                    <div id="paris">
+                        Paris <img src="src\Media\france-flag-waving-icon-64.png" alt="" class="france-waving-flag-emoji">
+                        <div class="localDate" id="localDatePa">Date</div>
+                        <div class="localTime" id="localTimePa">00:00:00</div>
+                    </div>
+                    <div id="tokyo">
+                        Tokyo <img src="src\Media\japan-flag-waving-icon-64.png" alt="" class="japan-waving-flag-emoji">
+                        <div class="localDate" id="localDateTk">Date</div>
+                        <div class="localTime" id="localTimeTk">00:00:00</div>
+                    </div>
+                    <div id="sydney">
+                        Sydney <img src="src\Media\australia-flag-waving-icon-64.png" alt="" class="australia-waving-flag-emoji">
+                        <div class="localDate" id="localDateSy">Date</div>
+                        <div class="localTime" id="localTimeSy">00:00:00</div>
+                    </div>
+                </div>
             </div>
        </main>
         <footer class="footer">

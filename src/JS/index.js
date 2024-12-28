@@ -4,7 +4,7 @@ function showDetails(event) {
       .tz(event.target.value)
       .format("dddd, MMMM D, YYYY HH:mm A");
 
-        let resultsCurrentDetailsElement = document.querySelector(
+    let resultsCurrentDetailsElement = document.querySelector(
       "#results-current-details"
     );
     resultsCurrentDetailsElement.innerHTML = `It is ${currentTime} in ${event.target.value}`;
