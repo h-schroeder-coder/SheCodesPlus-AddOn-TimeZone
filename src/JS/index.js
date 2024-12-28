@@ -16,6 +16,7 @@ function showDetails(event) {
 let selectedCityElement = document.querySelector("#city");
 selectedCityElement.addEventListener("change", showDetails);
 
+setInterval(function() {
 
 let losAngelesElement = document.querySelector("#los-angeles");
 let losAngelesDateElement = losAngelesElement.querySelector(".localDate");
@@ -87,3 +88,4 @@ let sydneyTimeElement = sydneyElement.querySelector(".localTime");
 
 sydneyDateElement.innerHTML = moment().tz("Australia/Sydney").format(`dddd, MMMM D, YYYY`);
 sydneyTimeElement.innerHTML = moment().tz("Australia/Sydney").format(`HH:mm:ss A`);
+}, 1000);
