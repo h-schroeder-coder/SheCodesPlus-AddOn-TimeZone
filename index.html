@@ -4,9 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/CSS/index.css" type="text/css" />
-    <title>Document</title>
+    <title>Time Zone Tool</title>
   </head>
   <body>
+    <div class="timezone-tool-container">
+        <header>
+            <h1>Time Zone Tool</h1>
+        </header>
+        <main>
+            <form action="/submit">
+                <select name="city" id="city" class="city-select">
+                    <option value="">Select a city</option>
+                    <option value="parisFR">Paris, France</option>
+                    <option value="tokyoJP">Tokyo, Japan</option>
+                    <option value="sydneyAU">Sydney, Austrailia</option>
+                </select>
+            </form>
+        </main>
+        <footer class="footer">
+            This site was coded by
+            <a href="https://github.com/h-schroeder-coder">Hannah Schroeder</a>
+            as a part of 
+            <a href="https://shecodes.io/workshops">SheCodes Plus Add-on Workshop</a>
+            <br />
+            and is available on
+            <a href="https://github.com/h-schroeder-coder/SheCodesPlus-AddOn-TimeZone">GitHub</a>
+            and is hosted on 
+            <a href="https://hschroedercoder-timezoneapp.netlify.app/">Netlify</a>
+        </footer>
+    </div>
     <script src="src/JS/index.js"></script>
   </body>
 </html>
