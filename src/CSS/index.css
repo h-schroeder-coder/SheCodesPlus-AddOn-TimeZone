@@ -1,44 +1,75 @@
 body {
-    background-color: rgb(82, 134, 194);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(82, 134, 194);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .timezone-tool-container {
-    background-color: rgb(141, 186, 236);
-    padding: 40px;
-    max-width: 80%;
-    display:block;
-    margin: 40px auto;
-    border-radius: 10px;
+  background-color: rgb(141, 186, 236);
+  padding: 40px;
+  max-width: 80%;
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
 }
 
 header {
-    border-bottom: solid lightcyan 1px;
-    padding-left: 40px;
-    }
+  border-bottom: solid lightcyan 1px;
+  padding-left: 40px;
+}
 
 main {
-    padding: 40px;
-    border-bottom: solid lightcyan 1px;
+  padding: 40px;
+  border-bottom: solid lightcyan 1px;
 }
 
 .city-select {
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 70%;
-    height: 30px;
-    border-radius: 4px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 70%;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.results {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 50px auto;
+  background-color: rgb(9, 57, 190);
+  color: white;
+  border-radius: 10px;
+}
+
+.results-header {
+  padding-bottom: 20px;
+  border-bottom: solid rgb(173, 197, 197) 1px;
+  display: block;
+  margin: 0 50px auto;
+}
+
+.result-details {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(141, 186, 236);
+  padding: 20px;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto; 
 }
 
 a {
-    text-decoration: none;
-    color: rgb(9, 57, 190)
+  text-decoration: none;
+  color: rgb(9, 57, 190);
 }
 
 .footer {
-    padding: 40px;
-    text-align: center;
-    color: rgb(52, 52, 53);
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 40px;
+  text-align: center;
+  color: rgb(52, 52, 53);
+  font-size: small;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
