@@ -1,16 +1,31 @@
 function showDetails(event) {
   if (event.target.value.length > 0) {
-    let currentTime = moment()
-      .tz(event.target.value)
-      .format("dddd, MMMM D, YYYY HH:mm A");
+    if (event.target.value === "myCurrentLocation") {
+        let currentTimeZone = moment.tz.guess();
+        currentTime = moment()
+          .tz("${currentTimeZone}")
+          .format("dddd, MMMM D, YYYY HH:mm A");
+        let cityName = currentTimeZone.replace("_", " ").split("/")[1];
 
-    let resultsCurrentDetailsElement = document.querySelector(
-      "#results-current-details"
-    );
-    resultsCurrentDetailsElement.innerHTML = `It is ${currentTime} in ${event.target.value}`;
+        let resultsCurrentDetailsElement = document.querySelector(
+           "#results-current-details"
+         );
+         resultsCurrentDetailsElement.innerHTML = `It is ${currentTime} in ${cityName}`;
 
-    alert(`It is ${currentTime} in ${event.target.value}`);
-  }
+         alert(`It is ${currentTime} in ${cityName}`);
+    } else {
+        let currentTime = moment()
+        .tz(event.target.value)
+        .format("dddd, MMMM D, YYYY HH:mm A");
+        
+        let resultsCurrentDetailsElement = document.querySelector(
+        "#results-current-details"
+        );
+        resultsCurrentDetailsElement.innerHTML = `It is ${currentTime} in ${event.target.value}`;
+
+        alert(`It is ${currentTime} in ${event.target.value}`);
+    }
+}
 }
 
 let selectedCityElement = document.querySelector("#city");
@@ -57,12 +72,16 @@ newYorkDateElement.innerHTML = moment()
   .format(`dddd, MMMM D, YYYY`);
 newYorkTimeElement.innerHTML = moment().tz("America/New_York").format(`HH:mm:ss A`);
 
-let barcelonaElement = document.querySelector("#barcelona");
-let barcelonaDateElement = barcelonaElement.querySelector(".localDate");
-let barcelonaTimeElement = barcelonaElement.querySelector(".localTime");
+let madridElement = document.querySelector("#madrid");
+let madridDateElement = madridElement.querySelector(".localDate");
+let madridTimeElement = madridElement.querySelector(".localTime");
 
-barcelonaDateElement.innerHTML = moment().tz("Europe/Barcelona").format(`dddd, MMMM D, YYYY`);
-barcelonaTimeElement.innerHTML = moment().tz("Europe/Barcelona").format(`HH:mm:ss A`);
+madridDateElement.innerHTML = moment()
+  .tz("Europe/Madrid")
+  .format(`dddd, MMMM D, YYYY`);
+madridTimeElement.innerHTML = moment()
+  .tz("Europe/Madrid")
+  .format(`HH:mm:ss A`);
 
 let parisElement = document.querySelector("#paris");
 let parisDateElement = parisElement.querySelector(".localDate");
