@@ -17,9 +17,9 @@
             <form action="/submit">
                 <select name="city" id="city" class="city-select">
                     <option value="">Select a city</option>
-                    <option value="parisFR">Paris, France</option>
-                    <option value="tokyoJP">Tokyo, Japan</option>
-                    <option value="sydneyAU">Sydney, Austrailia</option>
+                    <option value="Europe/Paris">Paris, France</option>
+                    <option value="Asia/Tokyo">Tokyo, Japan</option>
+                    <option value="Austrailia/Sydney">Sydney, Austrailia</option>
                 </select>
             </form>
             <div  class="results">
@@ -27,7 +27,9 @@
                     Results
                 </div>
                     <div class="result-details" id="result-details">
-                        Your results will display here after you select a city
+                        <div id="results-current-details">
+                            Your results will display here after you select a city
+                        </div>
                     </div>
             </div>
        </main>
